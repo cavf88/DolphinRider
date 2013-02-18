@@ -9,10 +9,16 @@
 
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
+#import "CCMenuItemSpriteHoldable.h"
 
 // HelloWorldLayer
 @interface HelloWorldLayer : CCLayer
 {
+    
+    CCSprite *mario,*flipper;//,*jumb,*runb;
+    CCMenuItemSpriteHoldable *runb,*jumpb,*gobackb;
+    CCAnimation *correr;
+    BOOL jump,riding;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
